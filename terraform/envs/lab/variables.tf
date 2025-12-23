@@ -27,3 +27,13 @@ variable "az" {
   type        = string
   default     = "ca-central-1a"
 }
+variable "admin_cidr" {
+  description = "24.150.82.194/32"
+  type        = string
+}
+
+variable "allow_app_from_cidr" {
+  description = "0.0.0.0/0"
+  type        = string
+  default     = "0.0.0.0/0"
+}
